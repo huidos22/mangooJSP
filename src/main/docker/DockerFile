@@ -1,0 +1,5 @@
+FROM frolvlad/alpine-oraclejdk8:slim
+VOLUME /tmp
+COPY mangooojsp-1.0.war /
+EXPOSE 8080
+CMD ["java", "-jar", "mangooojsp-1.0.war"]
