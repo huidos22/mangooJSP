@@ -44,6 +44,7 @@ import com.huidos.mangooo.viewresolvers.PdfViewResolver;
 @EnableWebMvc
 @ComponentScan(basePackages = "com.huidos.mangooo.configuration,com.huidos.mangooo.validator")
 @Import(value = { MangoooSecurityConfig.class })
+
 public class MangoooConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
